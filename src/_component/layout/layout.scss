@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  // Values in calc()explained
+
+  font-size: calc(12px + (24 - 12)*((100vmin - 400px)/(800 -400)));
+}
