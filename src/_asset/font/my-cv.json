@@ -1,10 +1,21 @@
 {
   "metadata": {
     "name": "my-cv",
-    "lastOpened": 1418773394855,
+    "lastOpened": 1558545218329,
     "created": 1558543515730
   },
   "iconSets": [
+    {
+      "selection": [],
+      "id": 1,
+      "metadata": {
+        "name": "Untitled Set"
+      },
+      "height": 1024,
+      "prevSize": 32,
+      "icons": [],
+      "invisible": false
+    },
     {
       "selection": [
         {
@@ -473,7 +484,10 @@
           "ligatures": "map2, guide2",
           "name": "map2",
           "id": 76,
-          "order": 0
+          "order": 31,
+          "prevSize": 32,
+          "code": 59724,
+          "tempChar": ""
         },
         {
           "ligatures": "history, time",
@@ -518,7 +532,7 @@
           "order": 7,
           "prevSize": 32,
           "code": 59731,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "printer, print",
@@ -917,7 +931,7 @@
           "order": 10,
           "prevSize": 32,
           "code": 59797,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "hammer, tool2",
@@ -926,7 +940,7 @@
           "order": 11,
           "prevSize": 32,
           "code": 59798,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "magic-wand, wizard",
@@ -977,7 +991,7 @@
           "order": 6,
           "prevSize": 32,
           "code": 59806,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "gift, present",
@@ -1076,7 +1090,7 @@
           "order": 12,
           "prevSize": 32,
           "code": 59822,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "airplane, travel",
@@ -1085,7 +1099,7 @@
           "order": 13,
           "prevSize": 32,
           "code": 59823,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "truck, transit",
@@ -1184,7 +1198,7 @@
           "order": 5,
           "prevSize": 32,
           "code": 59839,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "menu4, options4",
@@ -1253,7 +1267,7 @@
           "order": 15,
           "prevSize": 32,
           "code": 59850,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "link, chain",
@@ -1550,7 +1564,7 @@
           "order": 16,
           "prevSize": 32,
           "code": 59899,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "wondering2, emoticon30",
@@ -1643,7 +1657,7 @@
           "order": 17,
           "prevSize": 32,
           "code": 59914,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "minus, subtract",
@@ -1658,7 +1672,7 @@
           "order": 18,
           "prevSize": 32,
           "code": 59916,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "cancel-circle, close",
@@ -2321,7 +2335,7 @@
           "order": 19,
           "prevSize": 32,
           "code": 60026,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "indent-increase, wysiwyg29",
@@ -2432,7 +2446,7 @@
           "order": 20,
           "prevSize": 32,
           "code": 60044,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "google-plus3, brand7",
@@ -2465,7 +2479,7 @@
           "order": 22,
           "prevSize": 32,
           "code": 60049,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "instagram, brand12",
@@ -2498,7 +2512,7 @@
           "order": 21,
           "prevSize": 32,
           "code": 60054,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "vine",
@@ -2543,7 +2557,7 @@
           "order": 23,
           "prevSize": 32,
           "code": 60061,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "youtube2, brand22",
@@ -2660,7 +2674,7 @@
           "order": 26,
           "prevSize": 32,
           "code": 60080,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "npm",
@@ -2789,7 +2803,7 @@
           "order": 30,
           "prevSize": 32,
           "code": 60101,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "reddit, brand61",
@@ -2822,7 +2836,7 @@
           "order": 25,
           "prevSize": 32,
           "code": 60106,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "lastfm, brand66",
@@ -2861,7 +2875,7 @@
           "order": 24,
           "prevSize": 32,
           "code": 60112,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "name": "pinterest",
@@ -2924,7 +2938,7 @@
           "order": 29,
           "prevSize": 32,
           "code": 60121,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "firefox, browser2",
@@ -2975,7 +2989,7 @@
           "order": 27,
           "prevSize": 32,
           "code": 60129,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "file-excel, file13",
@@ -2996,7 +3010,7 @@
           "order": 28,
           "prevSize": 32,
           "code": 60132,
-          "tempChar": ""
+          "tempChar": ""
         },
         {
           "ligatures": "html-five2, w3c2",
@@ -11541,6 +11555,5 @@
     "showCodes": true,
     "gridSize": 16
   },
-  "uid": -1,
-  "time": 1558544083591
+  "uid": -1
 }

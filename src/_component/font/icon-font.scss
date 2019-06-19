@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'my-cv';
   src:
-    url('_asset/font/my-cv.ttf?qgtg42') format('truetype'),
-    url('_asset/font/my-cv.woff?qgtg42') format('woff'),
-    url('_asset/font/my-cv.svg?qgtg42#my-cv') format('svg');
+    url('asset/font/my-cv.ttf?gqtfc6') format('truetype'),
+    url('asset/font/my-cv.woff?gqtfc6') format('woff'),
+    url('asset/font/my-cv.svg?gqtfc6#my-cv') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,6 +28,9 @@
 }
 .my-cv__icon--location:before {
   content: "\e947";
+}
+.my-cv__icon--map2:before {
+  content: "\e94c";
 }
 .my-cv__icon--calendar:before {
   content: "\e953";

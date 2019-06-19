@@ -1,12 +1,18 @@
 -
   var myFullName = 'Pavel Ciupitu'
   var myJobTitle = 'Junior Web Developer'
+  var socialList = [
+    {icon: 'facebook2', url: 'http://facebook.com/pavelciupitu'},
+    {icon: 'twitter', url: 'http://twitter.com/pavelciupitu'},
+    {icon: 'youtube', url: 'http://youtube.com/pavelciupitu'},
+  ]
 #landing-page
 .landing-page
   .landing-page__wrapper
     h1.landing-page__name=myFullName
     h2.landing-page__title=myJobTitle
     ul.landing-page__social
-      li.landing-page__item
-        label.landing-page__label(for="")
-          span(clas=`my-cv__icon--home`)
+      each social in socialList
+        li.landing-page__item
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon--${social.icon}`)
