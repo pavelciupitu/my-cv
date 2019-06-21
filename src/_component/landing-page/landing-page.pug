@@ -6,25 +6,28 @@
       icon: 'google-plus2', url: 'http://plus.google.com'
       },
     {
+      icon: 'facebook2', url: 'http://facebook.com/pavelciupitu'
+      },
+    {
       icon: 'twitter', url: 'https://twitter.com/CiupituPavel'
       },
     {
       icon: 'youtube', url: 'https://www.youtube.com/channel/UCtBnHtpX_aBD8n4-MUhvAlQ'
       },
     {
-      icon: 'facebook2', url: 'http://facebook.com/pavelciupitu'
+      icon: 'github', url: 'https://github.com/pavelciupitu'
       },
     {
       icon: 'stackoverflow', url: 'https://stackoverflow.com/users/11681133/pavel-ciupitu'
       },
     {
-      icon: 'youtube', url: 'http://youtube.com/pavelciupitu'
+      icon: 'skype', url: 'https://Search_Pavel_Ciupitu_from_Constanta_city'
       },
     {
-      icon: 'youtube', url: 'http://youtube.com/pavelciupitu'
+      icon: 'linkedin2', url: 'https://www.linkedin.com/in/ciupitu-pavel-639465156/'
       },
     {
-      icon: 'youtube', url: 'http://youtube.com/pavelciupitu'
+      icon: 'earth', url: 'http://85.186.233.193:8989/'
       },
   ]
 #landing-page
@@ -33,7 +36,18 @@
     h1.landing-page__name=myFullName
     h2.landing-page__title=myJobTitle
     ul.landing-page__social
-      each social in socialList
+      each social, key in socialList
         li.landing-page__item
-          label.landing-page__label(for="")
+          label.landing-page__label(for=`message-box-id-${key}`)
             span(class=`my-cv__icon--${social.icon}`)
+    .landing-page__box-body
+      input.landing-page__box-radio(type="radio", name="awesome-radio", checked, id="default-message-radio")
+      .landing-page__box-message Click the above icons to reveal
+      .landing-page__box-header
+        .landing-page__box-info Click to visit
+        label.landing-page__box-close(for="default-message-radio") &times;
+
+      each social, key in socialList
+        input.landing-page__box-radio(type="radio", name="awesome-radio", id=`message-box-id-${key}`)
+        .landing-page__box-message
+          a.landing-page__box-link(href=social.url, target="_blank")=social.url
