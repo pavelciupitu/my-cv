@@ -34,8 +34,9 @@
 
 .landing-page__box-radio:checked +
 .landing-page__box-message {
-  padding: 1rem 0;
+  padding: 0.2rem 0.2rem;
   display: inherit;
+  font-size: 1.3rem;
 }
 
 .landing-page__box-radio,
@@ -52,7 +53,7 @@
 .landing-page__box-body {
   display: inline-block;
   border: 0.2rem solid white;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   padding: 0.8rem;
   margin-top: 0.5rem;
   position: relative;
