@@ -26,7 +26,7 @@
 }
 
 .landing-page__label {
-  color: white;
+  color: $color-white;
   padding: 0.1rem 0.3rem;
   // font-size: 2.5rem;
   cursor: pointer;
@@ -52,7 +52,7 @@
 
 .landing-page__box-body {
   display: inline-block;
-  border: 0.4rem solid white;
+  border: 0.4rem solid $color-white;
   border-radius: 1rem;
   padding: 0.8rem;
   margin-top: 0.5rem;
@@ -70,9 +70,9 @@
 
 .landing-page__box-info,
 .landing-page__box-close {
-  background: white;
+  background: $color-white;
   padding: 0.4rem;
-  white-space: nowrap;
+  width: nowrap;
   line-height: 1.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -81,8 +81,8 @@
 .landing-page__box-info {
   border-bottom-left-radius: 0.5rem;
   flex-grow: 1;
-  border:0.5rem solid white;
-  color: white;
+  border:0.5rem solid $color-white;
+  color: $color-white;
   background:transparent;
 }
 
@@ -99,13 +99,13 @@
 .landing-page__box-link,
 .landing-page__box-link:visited,
 .landing-page__box-message {
-  color: white;
+  color: $color-white;
 }
 
 .landing-page__box-link,
 .landing-page__box-link:visited {
   font-size:1.3rem;
-  white-space: nowrap;
+  width: nowrap;
   text-decoration: none;
   overflow: hidden;
   text-overflow: ellipsis;
