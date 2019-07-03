@@ -1,8 +1,33 @@
 //- data comes here
-
-
+-
+  var header = '#about me'
+  var imagePath = "asset/image/avatar.jpg"
+  var myFullName = "Pavel Ciupitu"
+  var myTitle = "Junior Web Developer"
+  var slogan = "I am a front-end developer, so I shape the virtual world!"
+  var achievement = {
+    title: 'achiemement',
+    content: "I've build few websites but all of them are made with the latest technologies and they have great score.",
+  }
+  var coolStuff = {
+    tilte: 'ttt',
+    button: [
+      {
+        url:
+        icon:
+        label:
+      }
+      ]
+  }
 //- the view comes here
 #about-me
 .about-me
+  .about-me__header=header
   .about-me__avatar-wrapper
-    img.about-me__avatar(src="asset/image/avatar.jpg")
+    img.about-me__avatar(src=imagePath)
+  .about-me__full-name=myFullName
+  .about-me__full-title=myTitle
+  .about-me__slogan=slogan
+
+  .about-me__title=achievement.title
+  .about-me__content=achievement.content
