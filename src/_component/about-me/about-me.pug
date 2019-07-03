@@ -6,17 +6,27 @@
   var myTitle = "Junior Web Developer"
   var slogan = "I am a front-end developer, so I shape the virtual world!"
   var achievement = {
-    title: 'achiemement',
+    title: 'achievement',
     content: "I've build few websites but all of them are made with the latest technologies and they have great score.",
   }
   var coolStuff = {
     tilte: 'ttt',
-    button: [
-      {
-        url:
-        icon:
-        label:
-      }
+    buttonList: [
+        {
+          url:'https://github.com/pavelciupitu',
+          icon:'github',
+          label:'Click to visit the GitHub project source',
+        }
+        ,{
+          url:'https://github.com/pavelciupitu',
+          icon:'github',
+          label:'Click to visit the GitHub project source',
+        }
+        ,{
+          url:'https://github.com/pavelciupitu',
+          icon:'github',
+          label:'Click to visit the GitHub project source',
+        }
       ]
   }
 //- the view comes here
@@ -28,6 +38,11 @@
   .about-me__full-name=myFullName
   .about-me__full-title=myTitle
   .about-me__slogan=slogan
-
+  
   .about-me__title=achievement.title
   .about-me__content=achievement.content
+
+  each buttom in coolStuff.buttonList
+    a(href=button.url)
+      span=button.label
+      span(class=`my-cv__icon--${social.icon}`)
