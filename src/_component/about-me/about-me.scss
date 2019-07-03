@@ -1,1 +1,29 @@
-#about-me {}
+.about-me {
+  background-image: radial-gradient(rgb(161, 190, 230), #1C304A);
+  padding-bottom: 1rem;
+  //- e ceva cu ellipse
+}
+
+.about-me__header {
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 4rem;
+  margin-bottom: 1 rem;
+}
+.about-me__avatar {
+  border-radius: 50%;
+  width: 100%;
+  border: 0.5rem solid #8EA9D7;
+}
+.about-me__avatar-weapper {
+  max-width: 50%;
+  margin: 1rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.3);
+
+  &::after {
+    content:'';
+    position: absolute;
+    border: 0.5rem solid rgba(255, 255, 255, 0.3);
+    top: -1rem;
+}
+}

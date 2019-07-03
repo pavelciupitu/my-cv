@@ -10,17 +10,17 @@
     content: "I've build few websites but all of them are made with the latest technologies and they have great score.",
   }
   var coolStuff = {
-    tilte: 'grab cool stuff',
+    title: 'grab cool stuff',
     buttonList: [
         {
           url:'https://github.com/pavelciupitu',
           icon:'github',
-          label:'Click to visit the GitHub project source',
+          label:`Click to visit the GitHub project source ${myTitle}`,
         }
         ,{
           url:'https://github.com/pavelciupitu',
           icon:'file-word',
-          label:'Click to download the Full CV',
+          label:'String 1 - click ' + myTitle + " dsadad",
         }
         ,{
           url:'https://github.com/pavelciupitu',
@@ -42,8 +42,9 @@
   .about-me__title=achievement.title
   .about-me__content=achievement.content
 
-  .about_me_title=coolStuff.title
-  each button in coolStuff.buttonList
-    a(href=button.url)
-      span=button.label
-      span(class=`my-cv__icon--${button.icon}`)
+  .about_me__title=coolStuff.title
+  .about.me_link-list
+    each button in coolStuff.buttonList
+      a(href=button.url)
+        span=button.label
+        span(class=`my-cv__icon--${button.icon}`)
