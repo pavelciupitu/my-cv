@@ -15,17 +15,17 @@
         {
           url:'https://github.com/pavelciupitu',
           icon:'github',
-          label:`Click to visit the GitHub project source ${myTitle}`,
+          label:'Click to visit the GitHub project source!',
         }
         ,{
           url:'https://github.com/pavelciupitu',
           icon:'file-word',
-          label:'String 1 - click ' + myTitle + " dsadad",
+          label:'Click to download my abbreviated resume!',
         }
         ,{
           url:'https://github.com/pavelciupitu',
           icon:'file-word',
-          label:'Click to download the shot version of my CV',
+          label:'Click to download my detailed resume!',
         }
       ]
   }
@@ -42,9 +42,9 @@
   .about-me__title=achievement.title
   .about-me__content=achievement.content
 
-  .about_me__title=coolStuff.title
-  .about.me_link-list
+  .about-me__title=coolStuff.title
+  .about-me_link-list
     each button in coolStuff.buttonList
-      a(href=button.url)
-        span=button.label
+      a.about-me__link(href=button.url)
+        span.about-me__link-description=button.label
         span(class=`my-cv__icon--${button.icon}`)
