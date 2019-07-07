@@ -1,0 +1,45 @@
+-
+  var header='#my-skills'
+  var my_personal_skills= [
+    {
+      title: "FRONT-END",
+      skillList: [
+        'HTML 5',
+        'CSS 3',
+        'Java Script',
+        'PUG',
+        'Gulp',
+        'SASS',
+    ]
+    },
+    {
+      title: "BACK-END",
+      skillList: [
+        'Git',
+        'GitHub',
+      ]
+    },
+    {
+      title: "OS & Others",
+      skillList: [
+        'Windows',
+        'Word',
+        'Excel',
+        'PowerPoint',
+        'Slack',
+        'Zoom',
+        'Discord',
+        'AutoHotKey',
+        'AutoCad',
+        'Arduino',
+      ]
+    }
+  ]
+
+#skills
+.skills
+  each thing in my_personal_skills
+    .skills__title=thing.title
+    .skills_list
+      each little__thing in thing.skillList
+        .skill_list_item=little__thing
