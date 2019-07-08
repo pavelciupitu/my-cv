@@ -38,8 +38,9 @@
 
 #skills
 .skills
+  .skills__header=header
   each thing in my_personal_skills
     .skills__title=thing.title
-    .skills_list
+    .skills__list
       each little__thing in thing.skillList
-        .skill_list_item=little__thing
+        .skill__list__item=little__thing
