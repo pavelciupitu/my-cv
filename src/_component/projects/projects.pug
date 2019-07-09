@@ -1,0 +1,40 @@
+-
+  var header = "#my-projects"
+  var projectsList = [
+    {
+      title: "w3school-replica",
+      url: "https://pavelciupitu.github.io/w3school-replica/",
+      type: "HTML5 / CSS3",
+      description: [
+        'A simple project, a copy of the first 3 pages of W3school.com',
+      ],
+    },
+    {
+      title: "My Resume",
+      url: "https://pavelciupitu.github.io/my-cv/",
+      type: "HTML5 / CSS3",
+      description: [
+        'A simple, yet effective 1-page resume template, showcasing different CSS3 techniques, with a mobile-first approach.',
+        'The main purpose is to highlight a couple CSS3 tricks, single-page responsiveness, and high optimization.',
+        'Used tech: HTML5, CSS3, Gulp & SASS',
+      ],
+    },
+    
+  ];
+#projects 
+.projects
+  .projects__header=header
+  input.project__input(type="radio", name="proj-radio", id="proj-default")
+  each project, key in projectsList
+    input.project__input(type="radio", name="proj-radio", id=`proj-id-${key}`)
+    label.project__title(for=`proj-id-${key}`)
+      | #{project.title}
+      label(for="proj-default") 
+        span.my-cv__icon--plus
+    .project__details
+      .project__top
+        a.project__url(href=project.url, target="_blank")="GitHub deply page !"
+        .project__type=project.type
+      .project__list
+        each stage in project.description
+          .project__stage=stage
