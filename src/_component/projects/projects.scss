@@ -18,7 +18,6 @@
     @extend %header;
   }
   
-  
   .project__title {
     border:0.3rem solid $color-white;
     color: $color-white;
@@ -33,7 +32,6 @@
     margin:auto;
     margin-top: 0.5rem;
     cursor: pointer;
-    
     &:hover {
       background-color: $color-sunglow;
       color: $color-white;
@@ -47,44 +45,54 @@
     background-color: $color-white;
     margin: 0.2rem 0.3rem;
   }
-  
-  .project__url {
-    text-decoration: none;
-    color: $color-fiord;
-    font-weight: bold;
-    transition: 0.5s;
-  
-    &:hover {
-      color: $color-sunglow;
+    
+  .project__input:checked + .project__title {
+    .my-cv__icon--plus {
+      pointer-events: all;
+      transform: rotateZ(45deg);
+      transition: 0.5s;    
+      cursor: pointer;
     }
+    background-color: $color-sunglow;
   }
   
-  .project__type {
-    font-weight: bold;
-    color: $color-fiord;
-  }
+//   .project__url {
+//     text-decoration: none;
+//     color: $color-fiord;
+//     font-weight: bold;
+//     transition: 0.5s;
   
-  .project__url,
-  .project__type {
-    font-size: 1.3rem;
-    padding: 0rem 0.5rem;
-    margin: 0.7rem 0rem;
-  }
+//     &:hover {
+//       color: $color-sunglow;
+//     }
+//   }
   
-  .project__details {
-    border: 0.3rem solid $color-white;
-    width: 65%;
-    margin: auto;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-  }
+//   .project__type {
+//     font-weight: bold;
+//     color: $color-fiord;
+//   }
   
-  .project__stage {
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    margin: 0rem 1rem 0.5rem 1rem;
-  }
+//   .project__url,
+//   .project__type {
+//     font-size: 1.3rem;
+//     padding: 0rem 0.5rem;
+//     margin: 0.7rem 0rem;
+//   }
+  
+//   .project__details {
+//     border: 0.3rem solid $color-white;
+//     width: 65%;
+//     margin: auto;
+//     border-bottom-left-radius: 3rem;
+//     border-bottom-right-radius: 3rem;
+//   }
+  
+//   .project__stage {
+//     padding: 1rem;
+//     font-size: 1.2rem;
+//     line-height: 1.2rem;
+//     margin: 0rem 1rem 0.5rem 1rem;
+//   }
   
   .my-cv__icon--plus {
     float:right;
@@ -94,14 +102,4 @@
     &:hover {
       color: $color-fiord;
     }  
-  }
-  
-  .project__input:checked + .project__title {
-    .my-cv__icon--plus {
-      pointer-events: all;
-      transform: rotateZ(45deg);
-      transition: 0.5s;    
-      cursor: pointer;
-    }
-    background-color: $color-sunglow;
   }
