@@ -1,6 +1,17 @@
 -
     var header = '#recent clients'
+    var clientList = [
+        "/asset/image/client/monsson.png",
+        "/asset/image/client/vestas.png",
+        "/asset/image/client/nordex.png",
+        "/asset/image/client/senvion.png",
+        "/asset/image/client/logistic.png",
+        "/asset/image/client/ge.jpg",
+    ];
 
 #client
 .client
-    .client___header=header
+    .client__header=header
+    each thing in clientList
+        .client__image
+            img(src=thing)

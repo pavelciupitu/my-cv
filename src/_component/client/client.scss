@@ -1,0 +1,17 @@
+.client {
+    background: $color-blue-bayoux;
+}
+
+.client__header {
+    color: $color-white;
+    @extend %header;
+}
+.client__image {
+    text-align: center;
+    height: 10rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    // border: 3rem solid $color-blue-bayoux;
+
+
+
+}
