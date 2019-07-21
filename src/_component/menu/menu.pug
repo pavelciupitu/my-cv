@@ -1,26 +1,60 @@
+-
+    var menuList = [
+        {
+            label:'Home',
+            icon:'home',
+            link:'#landing-page',
+        },
+        {
+            label:'About me',
+            icon:'wondering',
+            link:'#about-me',
+        },
+        {
+            label:'Awards',
+            icon:'trophy',
+            link:'#award',
+        },
+        {
+            label:'About me',
+            icon:'wondering',
+            link:'#about-me',
+        },
+        {
+            label:'About me',
+            icon:'wondering',
+            link:'#about-me',
+        },
+        {
+            label:'About me',
+            icon:'wondering',
+            link:'#about-me',
+        }
+        ]
 #menu
 .menu
+    .menu_list
+        each menu in menuList
+            a.menu_link(href=menu.link)
+                span(className=`my-cv__icon--${menu.icon}`)
+                span=menu.label
 
-    a.menu_link(href='#landing-page')
-        span.my-cv__icon--home
-        span Home
+//- a.menu_link(href='#about-me')
+//-         span.my-cv__icon--wondering
+//-         span About Me
 
-    a.menu_link(href='#about-me')
-        span.my-cv__icon--wondering
-        span About Me
+//-     a.menu_link(href='#award')
+//-         span.my-cv__icon--trophy
+//-         span Awards
 
-    a.menu_link(href='#award')
-        span.my-cv__icon--trophy
-        span Awards
+//-     a.menu_link(href='#skills')
+//-         span.my-cv__icon--cogs
+//-         span Skills
 
-    a.menu_link(href='#skills')
-        span.my-cv__icon--cogs
-        span Skills
+//-     a.menu_link(href='#projects')
+//-         span.my-cv__icon--briefcase
+//-         span My Projects
 
-    a.menu_link(href='#projects')
-        span.my-cv__icon--briefcase
-        span My Projects
-
-    a.menu_link(href='#client')
-        span.my-cv__icon--calendar
-        span My recent clients
+//-     a.menu_link(href='#client')
+//-         span.my-cv__icon--calendar
+//-         span My recent clients
