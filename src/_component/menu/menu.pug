@@ -16,28 +16,31 @@
             link:'#award',
         },
         {
-            label:'About me',
-            icon:'wondering',
-            link:'#about-me',
+            label:'Skills',
+            icon:'cogs',
+            link:'#skills',
         },
         {
-            label:'About me',
-            icon:'wondering',
-            link:'#about-me',
+            label:'My projects',
+            icon:'hammer',
+            link:'#projects',
         },
         {
-            label:'About me',
-            icon:'wondering',
-            link:'#about-me',
+            label:'My favorites',
+            icon:'briefcase',
+            link:'#client',
         }
         ]
 #menu
+a.menu__go-to(href="#menu")
+    span.my-cv__icon--menu3
 .menu
     .menu_list
         each menu in menuList
-            a.menu_link(href=menu.link)
-                span(className=`my-cv__icon--${menu.icon}`)
-                span=menu.label
+            a.menu__link(href=menu.link)
+                span(class=`my-cv__icon--${menu.icon}`)
+                span.menu__label=menu.label
+
 
 //- a.menu_link(href='#about-me')
 //-         span.my-cv__icon--wondering

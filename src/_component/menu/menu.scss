@@ -1,3 +1,40 @@
-.test_header {
-    color: red;
+.menu {
+    padding: 2rem;
+    background-color: $color-white;
+    position: relative;
+}
+
+.menu_list {
+    border: 0.1rem solid $color-downriver;
+    border-radius: 1rem;
+}
+
+.menu__link {
+    display: block;
+    padding: 1rem;
+    font-size: 2.4rem;
+    color: $color-downriver;
+    text-decoration: none;
+    border-bottom: 0.1rem solid $color-downriver;
+    &:last-child {
+        border: 0;
+    }
+}
+
+.menu__label {
+    padding: 0rem 1rem;
+}
+
+.menu__go-to {
+    background-color: $color-fiord;
+    color: $color-white;
+    position: fixed;
+    bottom: 0.8rem;
+    right: 0;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration:none;
+
+
 }
