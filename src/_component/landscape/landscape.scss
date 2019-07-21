@@ -1,3 +1,26 @@
 // .landscape__input {
 //     display: block
 // }
+
+.landscape {
+    position: fixed;
+    top: 0;
+    width:100vw;
+    height:100vw;
+    background-color: $color-downriver;
+    transition: 0.4s;
+}
+
+.landscape_button {
+    display: block;
+    background-color: $color-sunglow;
+    color: $color-blue-bayoux;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration:none;
+    border: 0.3rem solid $color-blue-bayoux;
+}
