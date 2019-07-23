@@ -1,5 +1,5 @@
 -
-    var show = 'Show message';
+    //- var show = 'Show message';
     var hide = 'Hide message';
     var description_list = [
         'Your screen is in landscape mode',
@@ -11,14 +11,15 @@
         'ignore all the above and hide this message',
     ]
 
-input.landsca_input(type="checkbox", id="landscape")
+input.landscape__input(type="checkbox", id="landscape")
 .landscape
-    label.landscape_button(for="landscape")
-        .landscape__message--show=show
+    label.landscape__button(for="landscape") 
+        .landscape__message--show
+            span.my-cv__icon--info
         .landscape__message--hide=hide
     .landscape__body
         each text in description_list
-            .landscape__description=text
-        ul.landscape__list 
+            p.landscape__description=text
+        ul.landscape__list
             each item in itemList
                 li.landscape__item=item
